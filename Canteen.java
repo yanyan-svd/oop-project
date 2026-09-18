@@ -5,8 +5,7 @@ public class Canteen {
 	static double before_discount = 0;
 	static double total_discount = 0;
 	static double final_amount = 0;
-	
-	
+
 	
 	static void orderProcess(int orderNum, int quantity, char identity) {
 	    double subtotal = 0;
@@ -47,14 +46,12 @@ public class Canteen {
 		
 		double orderTotal = subtotal - discount;
 	    System.out.printf("\n  Order Total: $%.2f", orderTotal);
-	    
 	    	
 		total_items += quantity;
 	    before_discount += subtotal;
     	total_discount += discount;
 	    final_amount += orderTotal;
 	}
-	
 	
 	static class Summary{
 		    void display() {     
